@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Structured Web Page</title>
+    <style>
+        /* Basic Reset */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: #f5f8fa;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #007acc;
+            color: white;
+            padding: 20px;
+            border-radius: 8px 8px 0 0;
+        }
+
+        header h1 {
+            margin-top: 0;
+        }
+
+        section {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #007acc;
+        }
+
+        /* Flexbox Layout */
+        .main-layout {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .sidebar {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .main-content {
+            flex: 2;
+            min-width: 300px;
+        }
+
+        /* Form Styling */
+        .form-input {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        /* Table Styling */
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        .data-table th, .data-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+        }
+
+        .data-table th {
+            background-color: #007acc;
+            color: white;
+        }
+
+        .data-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        /* Iframe Styling */
+        iframe {
+            border: 2px solid #007acc;
+            border-radius: 6px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #222;
+            color: white;
+            margin-top: 40px;
+            border-radius: 0 0 8px 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to the Demo Web Page</h1>
+            <p>This page demonstrates tables, forms, iframes, and class usage in HTML.</p>
+        </header>
+
+        <!-- Flexbox Layout for Sidebar and Main Content -->
+        <div class="main-layout">
+            <!-- Sidebar with Form -->
+            <section class="form-section sidebar">
+                <h2>Contact Form</h2>
+                <form action="#" method="post">
+                    <div class="form-input">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-input">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-input">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5"></textarea>
+                    </div>
+                    <div class="form-input">
+                        <label for="topic">Topic:</label>
+                        <select id="topic" name="topic">
+                            <option value="general">General Inquiry</option>
+                            <option value="support">Support</option>
+                            <option value="feedback">Feedback</option>
+                        </select>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+
+            <!-- Main Content with Table -->
+            <section class="table-section main-content">
+                <h2>Employee Table</h2>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Department</th>
+                            <th>Role</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Alice Johnson</td>
+                            <td>Marketing</td>
+                            <td>Manager</td>
+                        </tr>
+                        <tr>
+                            <td>Bob Smith</td>
+                            <td>Engineering</td>
+                            <td>Developer</td>
+                        </tr>
+                        <tr>
+                            <td>Carol White</td>
+                            <td>HR</td>
+                            <td>Recruiter</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+
+        <!-- Iframe Section -->
+        <section class="iframe-section" style="margin-top: 20px;">
+            <h2>Embedded Content</h2>
+            <p>Below is an embedded Google Map using an iframe:</p>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0191857834014!2d-122.42067968468116!3d37.77851997975827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064a4f6a3eb%3A0x8d65bdb03b878ed0!2sSan%20Francisco%20City%20Hall!5e0!3m2!1sen!2sus!4v1594243376376!5m2!1sen!2sus" 
+                width="100%" 
+                height="300" 
+                allowfullscreen="" 
+                aria-hidden="false" 
+                tabindex="0">
+            </iframe>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Example Web Page. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
