@@ -1,0 +1,17 @@
+This web page demonstrates how a clean, responsive layout can be achieved using modern CSS Flexbox. By placing the contact form in a sidebar and the employee table in the main content area, the layout becomes visually balanced and more intuitive for users. This separation of content enhances clarity and improves user interaction.
+
+Flexbox provides a powerful way to organize components in a flexible two-column structure. It adapts smoothly to different screen sizes, making the layout responsive without requiring complex media queries. The use of flex-wrap ensures that the layout remains user-friendly even on smaller devices by stacking the columns when needed.
+
+The integration of various HTML elements — such as forms, tables, and an iframe — showcases how modular design can create a cohesive and interactive experience. Each component serves a distinct purpose, yet they work harmoniously within the overall design.
+
+Additionally, the consistent styling and the use of semantic HTML tags like <header>, <section>, and <footer> contribute to better accessibility and code readability. This approach supports good development practices, making the codebase easier to maintain and extend in the future.
+
+Overall, this project highlights the effectiveness of combining semantic HTML with CSS Flexbox to create structured, responsive, and user-friendly web interfaces.
+
+
+
+
+
+
+
+
